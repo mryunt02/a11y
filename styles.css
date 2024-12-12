@@ -4,6 +4,21 @@ body {
   margin: 20px;
   background-color: #f4f4f4;
 }
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #1a73e8;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
 h1 {
   color: #333;
 }
@@ -76,4 +91,20 @@ code {
   border-radius: 3px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.9em;
+}
+.principle-box {
+  background-color: #e0f7fa;
+  padding: 10px;
+  border: 1px solid #00796b;
+  border-radius: 5px;
+}
+.principles-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media screen and (width > 600px) {
+  .principles-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }

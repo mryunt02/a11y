@@ -8,6 +8,53 @@
   </head>
   <body>
     <h1>Web Content Accessibility Guidelines (WCAG)</h1>
+    <p>
+      Web Content Accessibility Guidelines (WCAG) are a set of guidelines that
+      ensure that websites are accessible to all users, including those with
+      disabilities. The guidelines are divided into four principles:
+      Perceivable, Operable, Understandable, and Robust (POUR).
+    </p>
+    <div class="principles-container">
+      <div class="principle-box">
+        <h2>Perceivable:</h2>
+        <p>
+          Information and user interface components must be presentable to users
+          in ways they can perceive. This means that users must be able to
+          perceive the information being presented (it can't be invisible to all
+          of their senses) and that it must be presented in a way that they can
+          perceive it.
+        </p>
+      </div>
+      <div class="principle-box">
+        <h2>Operable:</h2>
+        <p>
+          User interface components and navigation must be operable. This means
+          that users must be able to operate the interface (the interface cannot
+          require interaction that a user cannot perform) and the interface must
+          be navigable (the interface cannot trap the user in a particular
+          section of the content).
+        </p>
+      </div>
+      <div class="principle-box">
+        <h2>Understandable:</h2>
+        <p>
+          Information and the operation of user interface must be
+          understandable. This means that users must be able to understand the
+          information as well as the operation of the user interface (the
+          content or operation cannot be beyond their understanding).
+        </p>
+      </div>
+      <div class="principle-box">
+        <h2>Robust:</h2>
+        <p>
+          Content must be robust enough that it can be interpreted reliably by a
+          wide variety of user agents, including assistive technologies. This
+          means that users must be able to access the content as technologies
+          advance (as technologies and user agents evolve, the content should
+          remain accessible).
+        </p>
+      </div>
+    </div>
     <h2>WCAG Levels:</h2>
     <p>
       A level: Basic web accessibility features. This level addresses the most
@@ -23,7 +70,7 @@
       to achieve.
     </p>
 
-    <h2>Color Contrast:</h2>
+    <h2 id="color-contrast">Color Contrast</h2>
     <p>
       The contrast between the text color and the background color should be at
       least 4.5:1 for normal text and 3:1 for large text.
@@ -86,7 +133,7 @@
     <div class="contrast-example contrast-19-1">
       Contrast ratio: 19:1 (Good contrast)
     </div>
-    <h2>Alternative Text</h2>
+    <h2 id="alternative-text">Alternative Text</h2>
     <p>
       Alternative text is a text description that can be added to an image's
       HTML tag. This text is read by screen readers to describe the image to
