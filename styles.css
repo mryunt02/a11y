@@ -70,3 +70,10 @@ a:hover {
   background-color: #ffff00;
   color: #000;
 }
+code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+}
