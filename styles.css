@@ -20,17 +20,53 @@ p {
 .good-contrast {
   color: #000;
   background-color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
 .bad-contrast {
   color: #999;
   background-color: #ccc;
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
-.img {
-  border: 1px solid black;
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.contrast-example {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.contrast-21-1 {
+  background-color: #000;
+  color: #fff;
+}
+.contrast-7-1 {
+  background-color: #555;
+  color: #fff;
+}
+.contrast-3-1 {
+  background-color: #aaa;
+  color: #fff;
+}
+.contrast-2-1 {
+  background-color: #ccc;
+  color: #fff;
+}
+.contrast-4-1 {
+  background-color: #ff0000;
+  color: #fff;
+}
+.contrast-15-1 {
+  background-color: #00ff00;
+  color: #000;
+}
+.contrast-8-1 {
+  background-color: #0000ff;
+  color: #fff;
+}
+.contrast-19-1 {
+  background-color: #ffff00;
+  color: #000;
 }
