@@ -43,6 +43,14 @@ p {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+ul,
+ol {
+  padding-left: 20px;
+}
+ul li,
+ol li {
+  margin-bottom: 10px;
+}
 .good-contrast {
   color: #000;
   background-color: #fff;
@@ -102,6 +110,8 @@ code {
   border-radius: 3px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.9em;
+  display: block;
+  margin-top: 10px;
 }
 .principles-container {
   display: grid;

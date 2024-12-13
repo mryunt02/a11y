@@ -12,6 +12,7 @@
         <li><a href="#color-contrast">Color Contrast</a></li>
         <li><a href="#alternative-text">Alternative Text</a></li>
         <li><a href="#links">Links</a></li>
+        <li><a href="#labels">Labels</a></li>
       </ul>
     </nav>
     <h1>Web Content Accessibility Guidelines (WCAG)</h1>
@@ -93,7 +94,7 @@
       click on the text and select "Inspect". Then click on the "Contrast ratio"
       tab.
     </p>
-    <p class="good-contrast example">
+    <p class="good-contrast">
       This is an example of good contrast. The text color is black, and the
       background color is white.
       <img
@@ -104,7 +105,7 @@
       You can check the contrast of this text using the contrast checker tool or
       Browser contrast checker.
     </p>
-    <p class="bad-contrast example">
+    <p class="bad-contrast">
       This is an example of bad contrast. The text color is light gray, and the
       background color is light gray.
       <img
@@ -173,16 +174,6 @@
       be clear and concise. Avoid using generic text like "click here" or "read
       more" as it does not provide any context to the user.
     </p>
-    <p>
-      Links should also be visually distinguishable from regular text. You can
-      use different colors, underlines, or bold text to make links stand out.
-    </p>
-    <p>
-      You can use the following CSS to style links:
-      <code>
-        .link { color: blue; text-decoration: underline; font-weight: bold; }
-      </code>
-    </p>
     <p class="example">
       Example of a descriptive link:
       <a href="https://www.w3.org/WAI/WCAG21/quickref/" class="link"
@@ -201,6 +192,79 @@
       <code
         >&lt;a href="https://www.w3.org/WAI/WCAG21/quickref/"
         class="link"&gt;Click here&lt;/a&gt;</code
+      >
+    </p>
+    <h2 id="labels">Labels</h2>
+    <p>
+      Labels are used to describe form elements such as input fields,
+      checkboxes, radio buttons, and select dropdowns. Labels should be associated
+      with their corresponding form elements using the "for" attribute on the label
+      tag. This allows screen readers to read out the label when the form element is
+      focused. Labels should be descriptive and provide context to the user.
+    </p>
+    <p>
+      Best practices for using labels:
+      <ol>
+        <li>Always use a label for each form element to ensure accessibility.</li>
+        <li>Make sure the label is descriptive and provides enough context.</li>
+        <li>Use the "for" attribute to associate the label with the form element by matching the "for" attribute value with the "id" of the form element.</li>
+        <li>For checkboxes and radio buttons, place the label text to the right of the form element for better readability.</li>
+        <li>For select dropdowns, use a label to describe the purpose of the dropdown.</li>
+      </ol>
+    </p>
+    <p>
+      You can use the following HTML to associate a label with a form element:
+      <code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code>
+      <code>&lt;input type="text" id="name" /&gt;</code>
+    </p>
+    <p>
+      You can also wrap the input field inside the label tag to associate them:
+      <code>&lt;label&gt;Name: &lt;input type="text" /&gt;&lt;/label&gt;</code>
+    </p>
+    <p class="example">
+      Example of a label associated with an input field:
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+      <code
+        >&lt;label for="name"&gt;Name:&lt;/label&gt; &lt;input type="text"
+        id="name" /&gt;</code
+      >
+    </p>
+    <p class="example">
+      Example of a label associated with a checkbox:
+      <label for="subscribe">Subscribe to newsletter</label>
+      <input type="checkbox" id="subscribe" />
+      <code
+        >&lt;label for="subscribe"&gt;Subscribe to newsletter&lt;/label&gt;
+        &lt;input type="checkbox" id="subscribe" /&gt;</code
+      >
+    </p>
+    <p class="example">
+      Example of a label associated with radio buttons:
+      <label for="gender-male">Male</label>
+      <input type="radio" id="gender-male" name="gender" value="male" />
+      <label for="gender-female">Female</label>
+      <input type="radio" id="gender-female" name="gender" value="female" />
+      <code
+        >&lt;label for="gender-male"&gt;Male&lt;/label&gt; &lt;input type="radio"
+        id="gender-male" name="gender" value="male" /&gt; &lt;label
+        for="gender-female"&gt;Female&lt;/label&gt; &lt;input type="radio"
+        id="gender-female" name="gender" value="female" /&gt;</code
+      >
+    </p>
+    <p class="example">
+      Example of a label associated with a select dropdown:
+      <label for="country">Country:</label>
+      <select id="country">
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+      </select>
+      <code
+        >&lt;label for="country"&gt;Country:&lt;/label&gt; &lt;select
+        id="country"&gt; &lt;option value="us"&gt;United
+        States&lt;/option&gt; &lt;option value="ca"&gt;Canada&lt;/option&gt;
+        &lt;option value="uk"&gt;United Kingdom&lt;/option&gt; &lt;/select&gt;</code
       >
     </p>
   </body>
