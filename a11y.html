@@ -11,6 +11,7 @@
       <ul>
         <li><a href="#color-contrast">Color Contrast</a></li>
         <li><a href="#alternative-text">Alternative Text</a></li>
+        <li><a href="#links">Links</a></li>
       </ul>
     </nav>
     <h1>Web Content Accessibility Guidelines (WCAG)</h1>
@@ -92,7 +93,7 @@
       click on the text and select "Inspect". Then click on the "Contrast ratio"
       tab.
     </p>
-    <p class="good-contrast">
+    <p class="good-contrast example">
       This is an example of good contrast. The text color is black, and the
       background color is white.
       <img
@@ -103,7 +104,7 @@
       You can check the contrast of this text using the contrast checker tool or
       Browser contrast checker.
     </p>
-    <p class="bad-contrast">
+    <p class="bad-contrast example">
       This is an example of bad contrast. The text color is light gray, and the
       background color is light gray.
       <img
@@ -114,6 +115,31 @@
       You can check the contrast of this text using the contrast checker tool or
       Browser contrast checker.
     </p>
+    <h2>Example Contrast Ratios:</h2>
+    <div class="contrast-example contrast-21-1">
+      Contrast ratio: 21:1 (Good contrast)
+    </div>
+    <div class="contrast-example contrast-7-1">
+      Contrast ratio: 7:1 (Good contrast)
+    </div>
+    <div class="contrast-example contrast-3-1">
+      Contrast ratio: 3:1 (Poor contrast)
+    </div>
+    <div class="contrast-example contrast-2-1">
+      Contrast ratio: 2:1 (Poor contrast)
+    </div>
+    <div class="contrast-example contrast-4-1">
+      Contrast ratio: 4:1 (Poor contrast)
+    </div>
+    <div class="contrast-example contrast-15-1">
+      Contrast ratio: 15:1 (Good contrast)
+    </div>
+    <div class="contrast-example contrast-8-1">
+      Contrast ratio: 8:1 (Good contrast)
+    </div>
+    <div class="contrast-example contrast-19-1">
+      Contrast ratio: 19:1 (Good contrast)
+    </div>
     <h2 id="alternative-text">Alternative Text</h2>
     <p>
       Alternative text is a text description that can be added to an image's
@@ -122,7 +148,7 @@
       the same information as the image. If the image is purely decorative, the
       alt text should be empty.
     </p>
-    <p>
+    <p class="example">
       Example of an image with alt text:
       <img
         src="./info.jpeg"
@@ -135,10 +161,47 @@
         a website" class="img" /&gt;</code
       >
     </p>
-    <p>
+    <p class="example">
       Example of an image with empty alt text:
       <img src="./decorative.jpeg" alt="" class="img" />
       <code>&lt;img src="./decorative.jpeg" alt="" class="img" /&gt;</code>
+    </p>
+    <h2 id="links">Links</h2>
+    <p>
+      Links should be descriptive and provide information about the destination
+      of the link. Screen readers read out the link text to users, so it should
+      be clear and concise. Avoid using generic text like "click here" or "read
+      more" as it does not provide any context to the user.
+    </p>
+    <p>
+      Links should also be visually distinguishable from regular text. You can
+      use different colors, underlines, or bold text to make links stand out.
+    </p>
+    <p>
+      You can use the following CSS to style links:
+      <code>
+        .link { color: blue; text-decoration: underline; font-weight: bold; }
+      </code>
+    </p>
+    <p class="example">
+      Example of a descriptive link:
+      <a href="https://www.w3.org/WAI/WCAG21/quickref/" class="link"
+        >WCAG Quick Reference</a
+      >
+      <code
+        >&lt;a href="https://www.w3.org/WAI/WCAG21/quickref/"
+        class="link"&gt;WCAG Quick Reference&lt;/a&gt;</code
+      >
+    </p>
+    <p class="example">
+      Example of a non-descriptive link:
+      <a href="https://www.w3.org/WAI/WCAG21/quickref/" class="link"
+        >Click here</a
+      >
+      <code
+        >&lt;a href="https://www.w3.org/WAI/WCAG21/quickref/"
+        class="link"&gt;Click here&lt;/a&gt;</code
+      >
     </p>
   </body>
 </html>

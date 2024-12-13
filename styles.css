@@ -114,6 +114,13 @@ code {
   border: 1px solid #00796b;
   border-radius: 5px;
 }
+.example {
+  background-color: #e8f5e9;
+  padding: 10px;
+  border: 1px solid #388e3c;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
 @media screen and (max-width: 600px) {
   .principles-container {
     grid-template-columns: 1fr;
