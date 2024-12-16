@@ -13,6 +13,7 @@
         <li><a href="#alternative-text">Alternative Text</a></li>
         <li><a href="#links">Links</a></li>
         <li><a href="#labels">Labels</a></li>
+        <li><a href="#semantic-html">Semantic HTML</a></li>
       </ul>
     </nav>
     <h1>Web Content Accessibility Guidelines (WCAG)</h1>
@@ -94,7 +95,7 @@
       click on the text and select "Inspect". Then click on the "Contrast ratio"
       tab.
     </p>
-    <p class="good-contrast">
+    <p class="example">
       This is an example of good contrast. The text color is black, and the
       background color is white.
       <img
@@ -105,7 +106,7 @@
       You can check the contrast of this text using the contrast checker tool or
       Browser contrast checker.
     </p>
-    <p class="bad-contrast">
+    <p class="bad-contrast bad-example">
       This is an example of bad contrast. The text color is light gray, and the
       background color is light gray.
       <img
@@ -184,7 +185,7 @@
         class="link"&gt;WCAG Quick Reference&lt;/a&gt;</code
       >
     </p>
-    <p class="example">
+    <p class="bad-example">
       Example of a non-descriptive link:
       <a href="https://www.w3.org/WAI/WCAG21/quickref/" class="link"
         >Click here</a
@@ -267,7 +268,7 @@
         &lt;option value="uk"&gt;United Kingdom&lt;/option&gt; &lt;/select&gt;</code
       >
     </p>
-    <h2>Semantic HTML</h2>
+    <h2 id="semantic-html">Semantic HTML</h2>
     <p>
       Using semantic HTML elements helps screen readers and other assistive
       technologies understand the structure of the content. Some common semantic
@@ -277,7 +278,7 @@
     </p>
     <p>
       Here are some examples of semantic HTML elements:
-      <ul>
+      <ul class="example">
         <li>&lt;header&gt; - Defines a header for a document or section.</li>
         <li>&lt;nav&gt; - Defines navigation links.</li>
         <li>&lt;main&gt; - Defines the main content of a document.</li>
@@ -296,7 +297,7 @@
         engines can use semantic HTML to better understand and index your
         content.
       </p>
-      <p>
+      <p class="example">
         Here is an example of how you can use semantic HTML elements to
         structure your content:
         <code>
@@ -320,10 +321,101 @@
           &lt;/footer&gt;
         </code>
       </p>
+      <p>
+        By using semantic HTML elements, you can create a more accessible and
+        user-friendly website that benefits all users. Remember to test your
+        website for accessibility and make any necessary adjustments to ensure
+        compliance with WCAG guidelines. 
+      </p>
+      <h2>Lists</h2>
+      <p>Any consecutive items in a list are separated by list item elements. The list item elements are defined by the <code>&lt;li&gt;</code> tag. The <code>&lt;ul&gt;</code> tag is used to create an unordered list, and the <code>&lt;ol&gt;</code> tag is used to create an ordered list. The <code>&lt;dl&gt;</code> tag is used to create a definition list.
+
+
+      </p>
+      <p>
+        Lists are a great way to organize content on your website and make it
+        more accessible to users. There are three main types of lists in HTML:
+        ordered lists, unordered lists, and definition lists.
+      </p>
+      <p>
+        Ordered lists are used to display a list of items in a specific order,
+        such as a numbered list. Unordered lists are used to display a list of
+        items without any specific order, such as a bulleted list. Definition
+        lists are used to display a list of terms and their definitions.
+      </p>
+      <p>
+        Here are some examples of lists in HTML:
+        <ul class="example">
+          <li>
+            Ordered List:
+            <ol>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ol>
+          </li>
+          <li>
+            Unordered List:
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </li>
+          <li>
+            Definition List:
+            <dl>
+              <dt>Term 1</dt>
+              <dd>Definition 1</dd>
+              <dt>Term 2</dt>
+              <dd>Definition 2</dd>
+              <dt>Term 3</dt>
+              <dd>Definition 3</dd>
+            </dl>
+          </li>
+        </ul>
+      </p>
+      <h2>Headings</h2>
+      <p>
+        Headings are used to define the structure of a web page and provide
+        hierarchy to the content. There are six levels of headings in HTML,
+        ranging from <code>&lt;h1&gt;</code> (the most important) to
+        <code>&lt;h6&gt;</code> (the least important). Headings help users
+        navigate the content of a page and understand the relationship between
+        different sections.
+      </p>
+      <p>
+        Screen reader users navigate a web page by jumping between headings, so
+        it's important to use headings to create a logical structure for your
+        content. Headings should be used to introduce new sections of content and
+        provide context to the user. Only one <code>&lt;h1&gt;</code> should be used per page, and the other headings should follow a logical order. Apply hedings for structure, not for styling.
+      </p>
+      <p>
+        Here is an example of how headings can be used to structure a web page:
+        <code class="example">
+          &lt;h1&gt;Main Heading&lt;/h1&gt;<br/>
+          &lt;h2&gt;Subheading 1&lt;/h2&gt;<br/>
+          &lt;p&gt;Content goes here...&lt;/p&gt;<br/>
+          &lt;h2&gt;Subheading 2&lt;/h2&gt;<br/>
+          &lt;p&gt;Content goes here...&lt;/p&gt;<br/>
+          &lt;h3&gt;Sub-subheading 1&lt;/h3&gt;<br/>
+          &lt;p&gt;Content goes here...&lt;/p&gt;<br/>
+          &lt;h3&gt;Sub-subheading 2&lt;/h3&gt;<br/>
+          &lt;p&gt;Content goes here...&lt;/p&gt;
+        </code>
+        </p>
+
+
+      
 
 
 
     <h2>Resources:</h2>
+    <p>
+      If you have any questions or need further assistance with web
+      accessibility, feel free to reach out to me. I'm here to help!
+      <a href="mailto:yuntbugrahan@gmail.com">Click here to Contact me</a>
+    </p>
     <ul>
       <li>
         <a href="https://www.w3.org/WAI/WCAG21/quickref/"
