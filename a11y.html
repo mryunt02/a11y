@@ -14,6 +14,11 @@
         <li><a href="#links">Links</a></li>
         <li><a href="#labels">Labels</a></li>
         <li><a href="#semantic-html">Semantic HTML</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#aria">ARIA</a></li>
+        <li><a href="#accessible-js">Accessible JavaScript</a></li>
+        <li><a href="#skip-nav">Skip Navigation</a></li>
       </ul>
     </nav>
     <h1>Web Content Accessibility Guidelines (WCAG)</h1>
@@ -327,7 +332,7 @@
         website for accessibility and make any necessary adjustments to ensure
         compliance with WCAG guidelines. 
       </p>
-      <h2>Lists</h2>
+      <h2 id="lists">Lists</h2>
       <p>Any consecutive items in a list are separated by list item elements. The list item elements are defined by the <code>&lt;li&gt;</code> tag. The <code>&lt;ul&gt;</code> tag is used to create an unordered list, and the <code>&lt;ol&gt;</code> tag is used to create an ordered list. The <code>&lt;dl&gt;</code> tag is used to create a definition list.
 
 
@@ -375,7 +380,7 @@
           </li>
         </ul>
       </p>
-      <h2>Headings</h2>
+      <h2 id="headings">Headings</h2>
       <p>
         Headings are used to define the structure of a web page and provide
         hierarchy to the content. There are six levels of headings in HTML,
@@ -404,6 +409,48 @@
           &lt;p&gt;Content goes here...&lt;/p&gt;
         </code>
         </p>
+        <h2 id="aria">ARIA(Accessible Rich Internet Applications)</h2>
+        <p>ARIA provides a way to make web content and web applications more accessible to people with disabilities. It is a set of attributes that can be added to HTML elements to define their roles, states, and properties. ARIA is especially useful for dynamic content and interactive elements that are not natively accessible to screen readers and other assistive technologies.</p>
+        <p>Some common ARIA attributes include:</p>
+        <ul class="example">
+          <li><code>role</code> - Defines the role of an element (e.g., button, link, menu).</li>
+          <li><code>aria-label</code> - Provides a label for an element that is not visible on the screen.</li>
+          <li><code>aria-labelledby</code> - References the ID of another element that serves as the label for the current element.</li>
+          <li><code>aria-describedby</code> - References the ID of another element that provides a description for the current element.</li>
+          <li><code>aria-hidden</code> - Indicates whether an element is visible or hidden to screen readers.</li>
+          <li><code>aria-live</code> - Defines how live regions should be announced by screen readers.</li>
+        </ul>
+        <h3>ARIA Live Regions</h3>
+        <p>ARIA live regions are used to announce dynamic content changes to screen reader users. Live regions can be set to different levels of verbosity to control how and when the content is announced. There are three main values for the <code>aria-live</code> attribute:</p>
+        <ul class="example">
+          <li><code>off</code> - The content is not announced by the screen reader.</li>
+          <li><code>polite</code> - The content is announced when the user is idle (e.g., after completing a task).</li>
+          <li><code>assertive</code> - The content is announced immediately, interrupting the current screen reader output.</li>
+        </ul>
+        <p>By using ARIA attributes and live regions, you can enhance the accessibility of your web content and provide a better experience for users with disabilities. Remember to test your website with screen readers and other assistive technologies to ensure that it is fully accessible.</p>
+        <h2 id="accessible-js">Accessible JavaScript</h2>
+        <p>JavaScript is a powerful tool for creating interactive and dynamic web content, but it can also introduce accessibility barriers if not implemented correctly. Here are some best practices for creating accessible JavaScript:</p>
+        <ul class="example">
+          <li>Use semantic HTML elements to provide structure and context to your content.</li>
+          <li>Ensure that interactive elements are keyboard accessible and focusable.</li>
+          <li>Provide alternative text for images and other non-text content.</li>
+          <li>Use ARIA attributes to define roles, states, and properties of elements.</li>
+          <li>Avoid using JavaScript to change the page structure or content without user interaction.</li>
+          <li>Test your website with screen readers and other assistive technologies to ensure accessibility.</li>
+        </ul>
+        <h2 id="skip-nav">Skip Navigation</h2>
+        <p>Skip navigation links are hidden links that allow users to skip over repetitive content and navigate directly to the main content of a web page. Skip navigation links are especially useful for keyboard and screen reader users who may have difficulty navigating through long lists of links or menus.</p>
+        <p>Here is an example of a skip navigation link:
+        <code >&lt;a href="#main-content" class="skip-link"&gt;Skip to main content&lt;/a&gt; <br/>
+          .skip-link{
+            left:100%;
+            transform: translate(100%,0);
+            opacity:0;
+            }
+        </code>
+        </p>
+        <p>The skip navigation link should be the first focusable element on the page and should be hidden from sighted users until it receives focus. When the link is focused, it should become visible and allow users to jump directly to the main content of the page.</p>
+
 
 
       
@@ -426,16 +473,7 @@
         <a href="https://webaim.org/resources/contrastchecker/"
           >WebAIM Contrast Checker</a
         >
-      </li>
-      <li>
-        <a href="https://www.w3.org/WAI/WCAG21/quickref/"
-          >WCAG Quick Reference</a
-        >
-      </li>
-      <li>
-        <a href="https://www.w3.org/WAI/WCAG21/quickref/"
-          >WCAG Quick Reference</a
-        >
+      
       </li>
   </body>
 </html>
